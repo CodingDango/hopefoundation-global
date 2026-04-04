@@ -37,7 +37,7 @@ export function ImpactSection() {
           </p>
         </div>
         
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-6 lg:grid-cols-2">
           {stats.map((stat) => (
             <Card key={stat.label} className="shadow-md text-center">
               <CardContent className="flex flex-col gap-2 p-4 sm:p-6">

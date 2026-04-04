@@ -1,11 +1,14 @@
+import Image from "next/image"
+
 interface TestimonialCardProps {
   quote: string
   name: string
   role: string
+  profile: string
   location?: string
 }
 
-export function TestimonialCard({ quote, name, role, location }: TestimonialCardProps) {
+export function TestimonialCard({ quote, name, role, location, profile}: TestimonialCardProps) {
   return (
     <div className="flex flex-col gap-6 rounded-xl border shadow-sm bg-card p-6">
       <div className="flex items-start gap-4">
@@ -17,10 +20,14 @@ export function TestimonialCard({ quote, name, role, location }: TestimonialCard
         </blockquote>
       </div>
       <div className="flex items-center gap-4">
-        <div 
-          className="size-12 shrink-0 rounded-full bg-muted" 
-          aria-label={`Photo of ${name}`} 
-        />
+        <div className='relative w-12 h-12 shrink-0 rounded-full overflow-hidden'>
+          <Image 
+            fill
+            className="object-cover"
+            alt={`Photo of ${name}`} 
+            src={profile}
+          />
+        </div>
         <div>
           <p className="font-semibold text-card-foreground">{name}</p>
           <p className="text-sm text-muted-foreground">

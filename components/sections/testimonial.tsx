@@ -8,6 +8,7 @@ const testimonials = [
     name: "Maria Santos",
     role: "Program Beneficiary",
     location: "New York",
+    profile: '/profile-1.jpg'
   },
   {
     quote:
@@ -15,6 +16,7 @@ const testimonials = [
     name: "James Wilson",
     role: "Scholarship Recipient",
     location: "Chicago",
+    profile: '/profile-2.jpg'
   },
   {
     quote:
@@ -22,6 +24,7 @@ const testimonials = [
     name: "Linda Chen",
     role: "Disaster Relief Recipient",
     location: "Houston",
+    profile: '/profile-3.jpg'
   },
 ];
 
@@ -50,6 +53,7 @@ export function TestimonialSection() {
                 name={testimonial.name}
                 role={testimonial.role}
                 location={testimonial.location}
+                profile={testimonial.profile}
               />
             ))}
           </div>

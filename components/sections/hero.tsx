@@ -8,7 +8,7 @@ export function HeroSection() {
     <section className="relative overflow-hidden bg-background h-full min-h-144 lg:min-h-192">
       <Image
         fill
-        src={"/hero-image.jpg"}
+        src={"/hero-background.jpg"}
         alt="Hero image"
         className="absolute object-cover"
         loading="eager"

@@ -5,22 +5,21 @@ import { useMediaQuery } from "react-responsive";
 import {
   Popover,
   PopoverContent,
-  PopoverDescription,
   PopoverHeader,
-  PopoverTitle,
   PopoverTrigger,
 } from "@/components/ui/popover";
 
 import Link from "next/link";
 import { Home, Info, Menu, Phone } from "lucide-react";
 import { Container } from "./container";
+import { DonationPreview } from "./donation-modal";
 
 export function Navbar() {
   const isSmallScreen = useMediaQuery({ query: "(max-width: 640px)" });
 
   return (
     <header className="sm:sticky top-0 z-50 w-full border-b bg-background">
-      <Container className="flex h-16 items-center justify-between" py="">
+      <Container className="flex h-14 items-center justify-between" py="">
         <Link href="/" className="flex items-center gap-2">
           <span className="text-xl font-bold text-foreground">
             HopeFoundation
@@ -32,21 +31,21 @@ export function Navbar() {
             <nav className="text-sm items-center gap-6 flex">
               <Link
                 href="/"
-                className="font-medium text-muted-foreground transition-colors hover:text-foreground"
+                className="font-medium text-muted-foreground transition-colors hover:text-foreground flex gap-2 items-center"
               >
-                Home
+                <Home className="size-5!"/> Home
               </Link>
               <Link
                 href="/about"
-                className="font-medium text-muted-foreground transition-colors hover:text-foreground"
+                className="font-medium text-muted-foreground transition-colors hover:text-foreground flex gap-2 items-center"
               >
-                About
+                <Info className="size-5!"/> About
               </Link>
               <Link
                 href="/contact"
-                className="font-medium text-muted-foreground transition-colors hover:text-foreground"
+                className="font-medium text-muted-foreground transition-colors hover:text-foreground flex gap-2 items-center"
               >
-                Contact
+                <Phone className="size-5!"/> Contact
               </Link>
             </nav>
           ) : (
@@ -81,7 +80,9 @@ export function Navbar() {
             </Popover>
           )}
 
-          <Button className="text-sm">Donate</Button>
+          <DonationPreview>
+            <Button className="text-sm">Donate</Button>
+          </DonationPreview>
         </div>
       </Container>
     </header>
