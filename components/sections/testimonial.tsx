@@ -1,3 +1,5 @@
+import { TestimonialCard } from "@/components/ui/testimonial-card"
+
 const testimonials = [
   {
     quote: "When I lost my job, I didn't know how I would feed my children. HopeFoundation provided not just meals, but hope. They helped me get back on my feet and gave me the support I needed during my darkest days.",
@@ -21,80 +23,30 @@ const testimonials = [
 
 export function TestimonialSection() {
   return (
-    <section className="bg-muted/50 py-20 md:py-28">
+    <section className="bg-background py-20 md:py-28">
       <div className="container mx-auto px-4 md:px-6">
-        <div className="mb-12 text-center">
-          <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl">
-            Stories of Impact
-          </h2>
-          <p className="mx-auto max-w-2xl text-muted-foreground">
-            Real stories from real people whose lives have been transformed through your generosity.
-          </p>
-        </div>
-
-        {/* Bento Grid Layout */}
-        <div className="grid gap-4 md:grid-cols-2 md:grid-rows-2">
-          {/* Featured testimonial - spans full height on left */}
-          <div className="row-span-2 flex flex-col justify-between rounded-3xl bg-primary p-8 text-primary-foreground">
-            <div>
-              <span className="mb-6 block text-6xl font-serif leading-none opacity-50">&ldquo;</span>
-              <blockquote className="mb-6">
-                <p className="text-xl leading-relaxed text-pretty md:text-2xl">
-                  {testimonials[0].quote}
-                </p>
-              </blockquote>
-            </div>
-            <div className="flex items-center gap-4">
-              <div className="size-14 shrink-0 rounded-full bg-primary-foreground/20" aria-label={`Photo of ${testimonials[0].name}`} />
-              <div>
-                <p className="text-lg font-semibold">{testimonials[0].name}</p>
-                <p className="text-sm opacity-80">
-                  {testimonials[0].role}, {testimonials[0].location}
-                </p>
-              </div>
-            </div>
+        <div className="flex flex-col gap-8 lg:flex-row lg:gap-16">
+          {/* Sticky headline */}
+          <div className="lg:sticky lg:top-24 lg:h-fit lg:w-80 lg:shrink-0">
+            <h2 className="mb-4 text-3xl font-bold tracking-tight text-foreground md:text-4xl text-balance">
+              Stories of Impact
+            </h2>
+            <p className="text-muted-foreground">
+              Real stories from real people whose lives have been transformed through your generosity.
+            </p>
           </div>
 
-          {/* Top right testimonial */}
-          <div className="flex flex-col justify-between rounded-3xl border border-border bg-background p-6">
-            <div>
-              <span className="mb-3 block text-4xl font-serif leading-none text-primary">&ldquo;</span>
-              <blockquote>
-                <p className="leading-relaxed text-pretty text-foreground">
-                  {testimonials[1].quote}
-                </p>
-              </blockquote>
-            </div>
-            <div className="mt-6 flex items-center gap-3">
-              <div className="size-10 shrink-0 rounded-full bg-muted" aria-label={`Photo of ${testimonials[1].name}`} />
-              <div>
-                <p className="font-semibold text-foreground">{testimonials[1].name}</p>
-                <p className="text-sm text-muted-foreground">
-                  {testimonials[1].role}
-                </p>
-              </div>
-            </div>
-          </div>
-
-          {/* Bottom right testimonial */}
-          <div className="flex flex-col justify-between rounded-3xl bg-secondary p-6">
-            <div>
-              <span className="mb-3 block text-4xl font-serif leading-none text-secondary-foreground/50">&ldquo;</span>
-              <blockquote>
-                <p className="leading-relaxed text-pretty text-secondary-foreground">
-                  {testimonials[2].quote}
-                </p>
-              </blockquote>
-            </div>
-            <div className="mt-6 flex items-center gap-3">
-              <div className="size-10 shrink-0 rounded-full bg-secondary-foreground/20" aria-label={`Photo of ${testimonials[2].name}`} />
-              <div>
-                <p className="font-semibold text-secondary-foreground">{testimonials[2].name}</p>
-                <p className="text-sm text-secondary-foreground/70">
-                  {testimonials[2].role}
-                </p>
-              </div>
-            </div>
+          {/* Vertical stack of testimonials */}
+          <div className="flex flex-1 flex-col gap-6">
+            {testimonials.map((testimonial, index) => (
+              <TestimonialCard
+                key={index}
+                quote={testimonial.quote}
+                name={testimonial.name}
+                role={testimonial.role}
+                location={testimonial.location}
+              />
+            ))}
           </div>
         </div>
       </div>
