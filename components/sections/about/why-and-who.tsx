@@ -7,6 +7,7 @@ export function WhyAndWho() {
         <div className="grid md:grid-cols-2 gap-12">
           {/* Who We Serve */}
           <div className="space-y-6">
+            <div className="w-full h-80 bg-secondary rounded-lg mb-6"></div>
             <h2 className="text-3xl font-bold tracking-tight text-secondary-foreground">
               Who We Serve
             </h2>
@@ -36,6 +37,7 @@ export function WhyAndWho() {
 
           {/* Why We Do It */}
           <div className="space-y-6">
+            <div className="w-full h-80 bg-secondary rounded-lg mb-6"></div>
             <h2 className="text-3xl font-bold tracking-tight text-secondary-foreground">
               Why We Do It
             </h2>
