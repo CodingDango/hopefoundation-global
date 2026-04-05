@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Container } from "../container";
+import { Container } from "../../container";
 import { Menu } from 'lucide-react';
 import Image from "next/image";
 

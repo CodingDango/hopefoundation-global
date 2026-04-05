@@ -1,5 +1,5 @@
 import { TestimonialCard } from "@/components/testimonial-card";
-import { Container } from "../container";
+import { Container } from "../../container";
 
 const testimonials = [
   {

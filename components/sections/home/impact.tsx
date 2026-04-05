@@ -1,7 +1,7 @@
 "use client";
 
 import { Card, CardContent } from "@/components/ui/card";
-import { Container } from "../container";
+import { Container } from "../../container";
 import CountUp from "react-countup";
 
 const stats = [
