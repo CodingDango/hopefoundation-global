@@ -17,7 +17,7 @@ export function Header() {
           </div>
           
           {/* Right: Image Placeholder */}
-          <div className="w-full h-96 bg-primary rounded-lg relative overflow-hidden shadow-md">
+          <div className="w-full h-96 bg-secondary rounded-lg relative overflow-hidden shadow-md">
             <Image fill src={'/team.jpg'} className="object-cover" alt='image of the team'/>
           </div>
         </div>

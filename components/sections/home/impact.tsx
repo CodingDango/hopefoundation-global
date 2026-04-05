@@ -34,7 +34,7 @@ const stats = [
 
 export function ImpactSection() {
   return (
-    <section className="bg-secondary">
+    <section className="bg-muted/50">
       <Container>
         <div className="mb-12 text-center">
           <h2 className="text-balance text-3xl font-bold tracking-tight text-secondary-foreground md:text-4xl">

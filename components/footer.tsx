@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 
 export function Footer() {
   return (
-    <footer className="border-t bg-muted/40">
+    <footer className="border-t bg-muted/50">
       <Container py="py-16">
         <div className="flex flex-col lg:flex-row gap-16">
           <div className="flex flex-col space-y-2 max-w-80">

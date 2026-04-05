@@ -3,19 +3,19 @@ import Image from "next/image";
 
 export function WhyAndWho() {
   return (
-    <section className="bg-secondary">
+    <section className="bg-muted/50">
       <Container>
         <div className="flex flex-col gap-20">
           {/* Who We Serve */}
           <div className="grid md:grid-cols-2 lg:grid-cols-[450px_1fr] gap-8 sm:gap-12">
-            <div className="w-full min-h-64 h-full bg-primary rounded-lg relative overflow-hidden shadow-md ">
+            <div className="w-full min-h-64 h-full bg-secondary rounded-lg relative overflow-hidden shadow-md ">
               <Image fill className="object-cover" src={'/serving.jpg'} alt='some text'/>
             </div>
             <WhoTextComponent/>
 
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-[450px_1fr] gap-8 sm:gap-12">
-            <div className="w-full min-h-64 h-full bg-primary rounded-lg relative overflow-hidden shadow-md ">
+            <div className="w-full min-h-64 h-full bg-secondary rounded-lg relative overflow-hidden shadow-md ">
               <Image fill className="object-cover" src={'/working.jpg'} alt='some text'/>
             </div>
             <WhyTextComponent/>
