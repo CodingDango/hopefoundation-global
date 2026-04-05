@@ -41,9 +41,23 @@ export function WhyAndWho() {
             <h2 className="text-3xl font-bold tracking-tight text-secondary-foreground">
               Why We Do It
             </h2>
-            <p className="text-lg text-secondary-foreground leading-relaxed">
-              We believe that hope is contagious, and compassion is transformative. Every day, thousands of people in our communities face overwhelming challenges—from not knowing where their next meal will come from to living without a safe place to sleep. These aren&apos;t statistics to us; they&apos;re our neighbors, friends, and family members. We do this work because we refuse to accept a world where hardship defines a person&apos;s entire story. Through dedicated support and sustainable programs, we&apos;re building a future where everyone has the opportunity to rebuild, grow, and thrive. Your involvement in HopeFoundation isn&apos;t just about giving; it&apos;s about being part of a movement that restores dignity and creates lasting change.
+            <p className="text-base text-secondary-foreground leading-relaxed">
+              We believe that hope is contagious and compassion is transformative.
             </p>
+            <ul className="space-y-3">
+              <li className="flex gap-3">
+                <span className="text-primary font-bold text-lg shrink-0">✓</span>
+                <span className="text-secondary-foreground"><strong>Restore Dignity</strong> - Every person deserves to be treated with respect and worth</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-primary font-bold text-lg shrink-0">✓</span>
+                <span className="text-secondary-foreground"><strong>Build Community</strong> - Real change happens when we stand together</span>
+              </li>
+              <li className="flex gap-3">
+                <span className="text-primary font-bold text-lg shrink-0">✓</span>
+                <span className="text-secondary-foreground"><strong>Create Lasting Change</strong> - Sustainable solutions that transform lives long-term</span>
+              </li>
+            </ul>
           </div>
         </div>
       </Container>
