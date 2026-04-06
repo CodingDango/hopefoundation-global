@@ -29,7 +29,7 @@ export default function CoreValues() {
     <section className="bg-background">
       <Container>
         <div className="mb-12 text-center md:text-start">
-          <h2 className="text-balance text-4xl font-bold tracking-tight  md:text-5xl">
+          <h2 className="text-balance text-4xl font-bold tracking-tight md:text-5xl">
             Core Values
           </h2>
           <p className="mx-auto md:mx-0 mt-4 max-w-2xl text-pretty text-lg text-muted-foreground">

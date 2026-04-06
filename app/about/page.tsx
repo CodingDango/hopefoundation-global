@@ -8,9 +8,9 @@ export default function AboutPage() {
   return (
     <>
       <Header />
-      <CoreValues />
-      <WhyAndWho />
       <HowWeWork />
+      <WhyAndWho />
+      <CoreValues />
     </>
   );
 }

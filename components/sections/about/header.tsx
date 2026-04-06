@@ -1,3 +1,4 @@
+import { AppImage } from "@/components/app-image";
 import { Container } from "@/components/container";
 import Image from "next/image";
 
@@ -12,13 +13,21 @@ export function Header() {
               About Us
             </h1>
             <p className="text-pretty text-lg text-muted-foreground leading-relaxed text-center md:text-start">
-              At HopeFoundation, we believe that every person deserves dignity, support, and a chance to thrive. Our mission is to transform communities by providing compassionate aid and sustainable solutions to those facing hardship.
+              At HopeFoundation, we believe that every person deserves dignity,
+              support, and a chance to thrive. Our mission is to transform
+              communities by providing compassionate aid and sustainable
+              solutions to those facing hardship.
             </p>
           </div>
-          
+
           {/* Right: Image Placeholder */}
           <div className="w-full h-96 bg-secondary rounded-lg relative overflow-hidden shadow-md">
-            <Image fill src={'/team.jpg'} className="object-cover" alt='image of the team'/>
+            <Image
+              fill
+              src={"/team.jpg"}
+              className="object-cover"
+              alt="image of the team"
+            />
           </div>
         </div>
       </Container>

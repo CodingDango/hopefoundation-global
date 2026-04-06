@@ -31,7 +31,7 @@ const programs = [
 
 export function HowWeWork() {
   return (
-    <section className="bg-background">
+    <section className="bg-muted/50">
       <Container>
         <div className="mb-12 text-center">
           <h2 className="text-balance text-4xl font-bold tracking-tight  md:text-5xl">
