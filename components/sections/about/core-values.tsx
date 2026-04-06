@@ -42,7 +42,7 @@ export default function CoreValues() {
             const Icon = value.icon;
             return (
               <div key={value.title} className="flex items-start gap-4">
-                <div className="p-4 bg-primary/10 rounded-lg shrink-0">
+                <div className="p-4 bg-primary/10 rounded-3xl shrink-0">
                   <Icon className="size-8 text-primary" />
                 </div>
                 <div>

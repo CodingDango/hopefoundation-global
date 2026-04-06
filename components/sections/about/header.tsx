@@ -1,4 +1,3 @@
-import { AppImage } from "@/components/app-image";
 import { Container } from "@/components/container";
 import Image from "next/image";
 
@@ -21,7 +20,7 @@ export function Header() {
           </div>
 
           {/* Right: Image Placeholder */}
-          <div className="w-full h-96 bg-secondary rounded-lg relative overflow-hidden shadow-md">
+          <div className="w-full h-96 bg-secondary rounded-3xl relative overflow-hidden shadow-md">
             <Image
               fill
               src={"/team.jpg"}

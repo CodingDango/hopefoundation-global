@@ -28,10 +28,10 @@ export function HeroSection() {
             </p>
           </div>
           <div className="flex gap-4 justify-center sm:justify-start">
-            <Button size={"xl"} className="rounded-lg">
+            <Button size={"xl"}>
               Donate Now
             </Button>
-            <Button size={"xl"} variant="outline" className="rounded-lg">
+            <Button size={"xl"} variant="outline">
               Learn More
             </Button>
           </div>

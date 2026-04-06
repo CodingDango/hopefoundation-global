@@ -16,14 +16,14 @@ export function CTASection() {
             <Button 
               size="lg" 
               variant="secondary"
-              className="w-full sm:w-56! sm:w-auto rounded-lg px-8 py-6 text-base font-semibold"
+              className="w-full sm:w-56! px-8 py-6 text-base font-semibold"
             >
               Donate Now
             </Button>
             <Button 
               size="lg" 
               variant="outline"
-              className="w-full sm:w-56! sm:w-auto rounded-lg border-primary-foreground/30 bg-transparent px-8 py-6 text-base font-semibold text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
+              className="w-full sm:w-56! border-primary-foreground/30 bg-transparent px-8 py-6 text-base font-semibold text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
             >
               Become a Volunteer
             </Button>

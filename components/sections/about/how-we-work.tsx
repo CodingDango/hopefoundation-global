@@ -4,15 +4,15 @@ import { Heart, Users, Lightbulb, Home } from "lucide-react";
 
 const programs = [
   {
-    title: "Emergency Food Assistance",
+    title: "Food Assistance",
     description:
-      "Providing hot meals and nutritious food packages to families in immediate need, ensuring no one goes hungry.",
+      "Providing hot meals and nutritious food packages to families in immediate need.",
     icon: Heart,
   },
   {
-    title: "Community Support Network",
+    title: "Community Support",
     description:
-      "Building strong community connections and peer support groups to help individuals feel less alone in their struggles.",
+      "Building strong community connections to help individuals feel less alone in their struggles.",
     icon: Users,
   },
   {
@@ -24,7 +24,7 @@ const programs = [
   {
     title: "Housing Solutions",
     description:
-      "Working to provide safe shelter, housing assistance, and resources to help people rebuild stable living situations.",
+      "Working to provide shelter, housing assistance, and resources to help people rebuild stable living.",
     icon: Home,
   },
 ];
