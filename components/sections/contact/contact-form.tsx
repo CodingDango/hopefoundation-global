@@ -85,7 +85,7 @@ export default function ContactForm() {
               <Textarea
                 id="message"
                 name="message"
-                placeholder="Tell us more about your inquiry..."
+                placeholder="Tell us more about your inquiry"
                 value={formData.message}
                 onChange={handleChange}
                 required
