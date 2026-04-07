@@ -10,7 +10,7 @@ interface ContainerProps {
 export function Container({ 
   children, 
   className = "",
-  py = "py-20 md:py-32"
+  py = "py-16 md:py-24"
 }: ContainerProps) {
   return (
     <div className={cn("max-w-7xl mx-auto px-4 md:px-6", py, className)}>

@@ -1,7 +1,7 @@
 import { Container } from "@/components/container";
 import Image from "next/image";
 
-export function Header() {
+export function AboutHero() {
   return (
     <section className="bg-background">
       <Container>

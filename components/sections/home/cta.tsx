@@ -1,5 +1,6 @@
-import { Button } from "@/components/ui/button"
-import { Container } from "../../container"
+import { Button } from "@/components/ui/button";
+import { Container } from "../../container";
+import { DonationPreview } from "@/components/donation-modal";
 
 export function CTASection() {
   return (
@@ -10,18 +11,22 @@ export function CTASection() {
             Ready to Make a Difference?
           </h2>
           <p className="mx-auto mt-6 max-w-2xl text-pretty text-lg text-primary-foreground/80">
-            Your support can transform lives. Whether you donate, volunteer, or spread the word, every action counts toward building a better tomorrow.
+            Your support can transform lives. Whether you donate, volunteer, or
+            spread the word, every action counts toward building a better
+            tomorrow.
           </p>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <Button 
-              size="lg" 
-              variant="secondary"
-              className="w-full sm:w-56! px-8 py-6 text-base font-semibold"
-            >
-              Donate Now
-            </Button>
-            <Button 
-              size="lg" 
+            <DonationPreview>
+              <Button
+                size="lg"
+                variant="secondary"
+                className="w-full sm:w-56! px-8 py-6 text-base font-semibold"
+              >
+                Donate Now
+              </Button>
+            </DonationPreview>
+            <Button
+              size="lg"
               variant="outline"
               className="w-full sm:w-56! border-primary-foreground/30 bg-transparent px-8 py-6 text-base font-semibold text-primary-foreground hover:bg-primary-foreground/10 hover:text-primary-foreground"
             >
@@ -29,7 +34,7 @@ export function CTASection() {
             </Button>
           </div>
         </div>
-        </Container>
+      </Container>
     </section>
-  )
+  );
 }
